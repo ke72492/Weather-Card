@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./js-weather-card-hw.css">
+</head>
+
+<body>
+    <div class="nav animate__animated animate__bounceInRight animate__slower 3s">
+        <div class="element"></div>
+        <div class="text">全臺天氣預報</div>
+        <div>
+            <button class="btn" id="all-btn">全部</button>
+            <button class="btn" id="north-btn">北部</button>
+            <button class="btn" id="middle-btn">中部</button>
+            <button class="btn" id="south-btn">南部</button>
+            <button class="btn" id="east-btn">東部</button>
+            <button class="btn" id="external-btn">離島</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="image"></div>
+    </div>
+    <div class="cloud"></div>
+    <div class="box"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js-weather-card-hw.js">
+
+    </script>
+</body>
+
+</html>
