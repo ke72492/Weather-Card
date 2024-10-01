@@ -74,9 +74,9 @@ function render(areaArray) {
     // 降雨
     // 描述
     for (let i = 0; i < areaArray.length; i++) {
-        content += `<div class="card card-${areaArray[i][0]}" data-aos="fade-up" data-aos-duration="3000">
+        content += `<div class="card card-${areaArray[i][0]}" data-aos="zoom-in-left" data-aos-duration="3000">
         <h2 id="area">${areaArray[i][1].locationName}</h2>
-        <div class="paragraph"  data-aos="fade-up-right" data-aos-duration="1000"><div id="weather">${areaArray[i][1].weatherElement[0].time[0].parameter.parameterName}</div>
+        <div class="paragraph"  data-aos="flip-right" data-aos-duration="1000"><div id="weather">${areaArray[i][1].weatherElement[0].time[0].parameter.parameterName}</div>
         <div id="time"><div class="time-icon-img"></div>${areaArray[i][1].weatherElement[0].time[0].startTime}<br>~${areaArray[i][1].weatherElement[0].time[0].endTime}</div>
         <div id="temperature"><div class="temperature-icon-img"></div>${areaArray[i][1].weatherElement[2].time[0].parameter.parameterName}℃~${areaArray[i][1].weatherElement[4].time[0].parameter.parameterName}℃</div>
         <div id="rain"><div class="rain-icon-img"></div>${areaArray[i][1].weatherElement[1].time[0].parameter.parameterName}%</div>
